@@ -2,17 +2,17 @@ import random
 
 class Quick(object):
     def partition(self, a, ini, fim):
-        pivo = a[fim - 1]
-        print('pivo: ', pivo)
+        pivot = a[fim - 1]
+        print('pivot: ', pivot)
         start = ini
         for i in range(ini, fim):
-            if a[i] <= pivo:
+            if a[i] <= pivot:
                 if a[start] != a[i]:
                     print('troca {0} por {1}'.format(a[start], a[i]))
                 a[start], a[i] = a[i], a[start] # swap
                 start += 1
         print('array: ', a)
-        return start - 1
+        return start - 1 # removes last increment
 
     def quickSort(self, a, ini, fim):
         if ini < fim:
