@@ -1,0 +1,21 @@
+print('Stack:')
+stack = [3, 4, 5]
+print(stack)
+print('append 6 and 7')
+stack.append(6)
+stack.append(7)
+print(stack)
+print('pop 7')
+stack.pop()
+print(stack)
+
+print('\nQueue:')
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+print(queue)
+print('append Terry and Graham')
+queue.append("Terry")
+queue.append("Graham")
+print('popleft Eric')
+queue.popleft()
+print(queue)
